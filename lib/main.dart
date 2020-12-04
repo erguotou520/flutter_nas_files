@@ -9,10 +9,11 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  final _hasConfigs = hasConfigs();
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    bool _hasConfigs = hasConfigs();
+    print(_hasConfigs);
     return MaterialApp(
       title: 'Nas Files',
       theme: ThemeData(

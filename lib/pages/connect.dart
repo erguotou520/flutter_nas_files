@@ -127,7 +127,7 @@ class ConnectState extends State<ConnectPage> {
                             ),
                             onPressed: () {
                               setState(() {
-                                _hosts = [..._hosts, Host()];
+                                _hosts = [..._hosts, Host(null, null)];
                               });
                             },
                           ),
